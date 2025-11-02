@@ -3,7 +3,9 @@ document.getElementById("nav-bar").innerHTML =
   <div class="toggle-container">  
       <label class="switch">
         <input type="checkbox" id="mode-toggle">
-        <span class="slider round"></span>
+        <span class="slider-round">
+          <span class="mode-text" id="mode-text">LUMÉA: BODY</span>
+        </span>
       </label>
     </div>
 
@@ -13,6 +15,7 @@ document.getElementById("nav-bar").innerHTML =
 
 
     <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
       <li><a href="/HTML FILES/Cart.html">Cart</a></li>
       <li class="option-search" >Search</li>
       <li><a href="/HTML FILES/Account.html">Account</a></li>

@@ -33,21 +33,86 @@ body
 
 .logo 
 {    
-    border: solid 2px rgb(17, 0, 255) ;
-    margin: 10px 0 0 45%;
+    margin: 10px 0 0 33%;
     font-size: 50px;
     letter-spacing: 5px;
 }
 
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    height: 45px;
+    margin: 18px 0 0 40px;
+}
+
+.switch input 
+{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
 
+.slider-round
+{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.63); /* light mode background */
+  border-radius: 40px;
+  border: 2px solid #fff;
+  transition: background-color 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Thasadith', sans-serif;
+  font-weight: 500px;
+  color: #2C2C2C;
+}
 
 
+.slider-round::before
+{
+    content: "";
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    right: 3px;
+    bottom: 3px;
+    background-color: #7F7F7F;
+    border-radius: 50%;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
 
 
+.mode-text 
+{
+  z-index: 1;
+  font-size: 14px;
+  text-transform: uppercase;
+  pointer-events: none;
+  margin-right: 40px;
+}
 
 
+input:checked + .slider-round 
+{
+  background-color: #2C2C2C; 
+  color: #FFFFFF;
 
+  .mode-text
+  {
+    margin-right: -40px;
+  }
+}
 
-
+input:checked + .slider-round::before 
+{
+  transform: translateX(-140px); /* move knob to left */
+}
 
