@@ -1,6 +1,13 @@
 body
 { 
-    background-color: burlywood;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+main
+{
+  font-family: 'Thasadith', sans-serif;
 }
 
 #nav-bar
@@ -115,4 +122,5 @@ input:checked + .slider-round::before
 {
   transform: translateX(-140px); /* move knob to left */
 }
+
 
