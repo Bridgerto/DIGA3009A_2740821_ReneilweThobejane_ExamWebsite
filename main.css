@@ -1,0 +1,53 @@
+body
+{ 
+    background-color: burlywood;
+}
+
+#nav-bar
+{
+    background-color: #363633;
+    color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-bar a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar ul
+{
+    float: right;
+    margin: 30px 0px 0px 200px;
+}
+
+#nav-bar ul li
+{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.logo 
+{    
+    border: solid 2px rgb(17, 0, 255) ;
+    margin: 10px 0 0 45%;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
