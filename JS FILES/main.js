@@ -15,12 +15,12 @@ document.getElementById("nav-bar").innerHTML =
 
 
     <ul class="nav-links">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/HTML FILES/Cart.html">Cart</a></li>
-      <li class="option-search" >Search</li>
-      <li><a href="/HTML FILES/Account.html">Account</a></li>
-      <li class="option-menu" >Menu</li>
-      <li><a href="/HTML FILES/Wishlist.html">Wishlist</a></li>
+      <li><a href="/index.html"  class="">Home</a></li>
+      <li><a href="/HTML FILES/Cart.html" class="Cart"> Cart </a></li>
+      <li class="option-search"  class="Search">Search</li>
+      <li><a href="/HTML FILES/Account.html"  class="Account">Account</a></li>
+      <li class="option-menu"  class="Menu">Menu</li>
+      <li><a href="/HTML FILES/Wishlist.html"  class="Wishlist">Wishlist</a></li>
     </ul>
 `;
 
