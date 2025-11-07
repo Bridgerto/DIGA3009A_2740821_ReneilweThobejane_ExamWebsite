@@ -45,6 +45,14 @@ main
     letter-spacing: 5px;
 }
 
+.reda-more
+{
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+/*TOOGLE FUNCTION CODE*/
 .switch
 {
     position: relative;
