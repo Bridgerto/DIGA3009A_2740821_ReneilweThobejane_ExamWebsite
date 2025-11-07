@@ -24,4 +24,34 @@ document.getElementById("nav-bar").innerHTML =
     </ul>
 `;
 
+//MENU OVERLAY
+document.addEventListener("DOMContentLoaded", () => 
+{
+  const menuOption = document.querySelector(".option-menu");
+  const menuOverlay = document.getElementById("menu-overlay");
+  const closeMenu = document.getElementById("close-menu");
 
+  // Check if elements exist before attaching events
+  if (menuOption && menuOverlay && closeMenu) 
+  {
+
+    // When user clicks "Menu"
+    menuOption.addEventListener("click", () => 
+    {
+      menuOverlay.classList.add("active"); // show overlay
+    });
+
+    closeMenu.addEventListener("click", () => 
+    {
+      menuOverlay.classList.remove("active"); 
+    });
+
+    menuOverlay.addEventListener("click", (e) =>
+    {
+      if (e.target === menuOverlay) 
+      {
+        menuOverlay.classList.remove("active");
+      }
+    });
+  }
+});

@@ -123,4 +123,71 @@ input:checked + .slider-round::before
   transform: translateX(-140px); /* move knob to left */
 }
 
+/*MENU OVERLAY*/
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #363633; /* stone tone */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 1000;
+}
 
+#menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Inner content */
+.menu-content {
+  text-align: center;
+  position: relative;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links li {
+  margin: 25px 0;
+}
+
+.menu-links a {
+  font-family: 'Thasadith', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #B8B8B5;
+}
+
+/* Close button */
+#close-menu {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 48px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#close-menu:hover {
+  color: #B8B8B5;
+}
