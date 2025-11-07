@@ -53,14 +53,15 @@ html
 .section-title
 {
   display: flex;
+  /*justify-content: space-between;*/
   flex-direction: row; 
   margin: 20px 0 0 95px;
+  /*float: right;*/
 }
 
 .section-title h2
 {
    font-size: 60px;
-
 }
 
 .section-title button
@@ -148,10 +149,105 @@ html
 
 
 /*DEPARTMENTS SECTION*/
-.departments-grid
+.departments-grid 
 {
-background-color: red;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 450px;
+  overflow: hidden;
+  margin: 0 90px;
+  background-color: #EFEFEB;
+  padding: 30px;
 }
+
+.department-card 
+{
+  flex: 1;
+  background-color: #f8f8f8; /*add an image here*/
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+}
+
+.department-card:hover 
+{
+  flex: 2.5; 
+}
+
+/* IMAGE SETTINGS */
+.department-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+}
+
+/* TEXT (vertical by default) */
+.department-card h3 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: 'Thasadith', sans-serif;
+  color: #2C2C2C;
+  font-size: 25x;
+  letter-spacing: 3px;
+  z-index: 2;
+  transition: all 0.6s ease;
+}
+
+.department-card button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #363633;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-family: 'Itim', cursive;
+  font-size: 15px;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.4s ease;
+  z-index: 3;
+}
+
+/* Hover reveals content */
+.department-card:hover img {
+  opacity: 1;
+}
+
+.department-card:hover h3 {
+  writing-mode: horizontal-tb;
+  transform: rotate(0);
+  color: white;
+  font-size: 24px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.department-card:hover button {
+  opacity: 1;
+}
+
+/* Smooth shadow lift */
+.department-card:hover {
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+
 /*SKIN CONCERNS SECTION*/
 .concerns-grid 
 {
