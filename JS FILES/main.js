@@ -10,17 +10,17 @@ document.getElementById("nav-bar").innerHTML =
     </div>
 
     <div class="logo">
-      <a href="/index.html">LUMÉA</a>
+      <a href="./index.html">LUMÉA</a>
     </div>
 
 
     <ul class="nav-links">
-      <li><a href="/index.html"  class="">Home</a></li>
-      <li><a href="/HTML FILES/Cart.html" class="Cart"> Cart </a></li>
+      <li><a href="./index.html"  class="">Home</a></li>
+      <li><a href="./HTML FILES/Cart.html" class="Cart"> Cart </a></li>
       <li class="option-search"  class="Search">Search</li>
-      <li><a href="/HTML FILES/Account.html"  class="Account">Account</a></li>
+      <li><a href="./HTML FILES/Account.html"  class="Account">Account</a></li>
       <li class="option-menu"  class="Menu">Menu</li>
-      <li><a href="/HTML FILES/Wishlist.html"  class="Wishlist">Wishlist</a></li>
+      <li><a href="./HTML FILES/Wishlist.html"  class="Wishlist">Wishlist</a></li>
     </ul>
 `;
 
