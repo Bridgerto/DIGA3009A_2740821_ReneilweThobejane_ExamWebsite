@@ -10,7 +10,7 @@ document.getElementById("nav-bar").innerHTML =
     </div>
 
     <div class="logo">
-      <a href="./index.html">LUMÉA</a>
+      <a href="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/index.html">LUMÉA</a>
     </div>
 
 
