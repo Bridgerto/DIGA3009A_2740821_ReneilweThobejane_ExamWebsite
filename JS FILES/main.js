@@ -10,12 +10,12 @@ document.getElementById("nav-bar").innerHTML =
     </div>
 
     <div class="logo">
-      <a href="./DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/index.html" >LUMÉA</a>
+      <a href="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/index.html" >LUMÉA</a>
     </div>
 
 
     <ul class="nav-links">
-      <li><a href="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/index.html"  class="">Home</a></li>
+      <li><a href="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/index.html"  class="Home">Home</a></li>
       <li><a href="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/HTML FILES/Cart.html" class="Cart"> Cart </a></li>
       <li class="option-search"  class="Search">Search</li>
       <li><a href="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/HTML FILES/Account.html"  class="Account">Account</a></li>
