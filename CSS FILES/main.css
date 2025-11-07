@@ -10,7 +10,7 @@ main
   font-family: 'Thasadith', sans-serif;
 }
 
-#nav-bar #nav-bar2
+#nav-bar, #nav-bar2
 {
     background-color: #363633;
     color: white;
@@ -20,19 +20,19 @@ main
     flex-direction: row;
 }
 
-#nav-bar a #nav-bar2 a
+#nav-bar a, #nav-bar2 a
 {
     text-decoration: none;
     color: white;
 }
 
-#nav-bar ul #nav-bar2 ul
+#nav-bar ul, #nav-bar2 ul
 {
     float: right;
     margin: 30px 0px 0px 200px;
 }
 
-#nav-bar ul li  #nav-bar2 ul li
+#nav-bar ul li,  #nav-bar2 ul li
 {
     display: inline-block;
     padding: 0 15px;
