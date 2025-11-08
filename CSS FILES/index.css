@@ -157,8 +157,11 @@ html
   height: 450px;
   overflow: hidden;
   margin: 0 90px;
+}
+
+.deparment-backg
+{  
   background-color: #EFEFEB;
-  padding: 30px;
 }
 
 .department-card 
