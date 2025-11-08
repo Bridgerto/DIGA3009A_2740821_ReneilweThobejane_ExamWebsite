@@ -1,13 +1,11 @@
 let basePath = "";
 
-// If we’re on GitHub Pages, prepend the repo name
-if (window.location.hostname.includes("github.io")) {
+if (window.location.hostname.includes("github.io")) 
+{
   basePath = "/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite";
 }
 
-// ========================================================
 // 🧭 NAVBAR INJECTION
-// ========================================================
 document.getElementById("nav-bar").innerHTML = `
   <div class="toggle-container">  
     <label class="switch">
@@ -32,27 +30,30 @@ document.getElementById("nav-bar").innerHTML = `
   </ul>
 `;
 
-// ========================================================
-// 🍔 MENU OVERLAY LOGIC
-// ========================================================
-document.addEventListener("DOMContentLoaded", () => {
+// MENU OVERLAY 
+document.addEventListener("DOMContentLoaded", () => 
+{
   const menuOption = document.querySelector(".option-menu");
   const menuOverlay = document.getElementById("menu-overlay");
   const closeMenu = document.getElementById("close-menu");
 
-  if (menuOption && menuOverlay && closeMenu) {
+  if (menuOption && menuOverlay && closeMenu) 
+  {
     // When user clicks "Menu"
-    menuOption.addEventListener("click", () => {
+    menuOption.addEventListener("click", () => 
+    {
       menuOverlay.classList.add("active");
     });
 
     // Close when X button clicked
-    closeMenu.addEventListener("click", () => {
+    closeMenu.addEventListener("click", () => 
+    {
       menuOverlay.classList.remove("active");
     });
 
     // Close when clicking outside the menu
-    menuOverlay.addEventListener("click", (e) => {
+    menuOverlay.addEventListener("click", (e) => 
+    {
       if (e.target === menuOverlay) {
         menuOverlay.classList.remove("active");
       }
