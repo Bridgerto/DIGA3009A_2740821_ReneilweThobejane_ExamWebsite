@@ -327,12 +327,12 @@ html
 {
   font-size: 8rem;
   margin-bottom: 15px;
-  color: #2c2c2c;
+  color: black;
 }
 
 .concern-card p 
 {
-  color: #555;
+  color: black;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 20px;

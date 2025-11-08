@@ -24,12 +24,13 @@ main
 {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 #nav-bar ul
 {
     float: right;
-    margin: 30px 0px 0px 130px;
+    margin: 30px 0px 0px 90px;
 }
 
 #nav-bar ul li
