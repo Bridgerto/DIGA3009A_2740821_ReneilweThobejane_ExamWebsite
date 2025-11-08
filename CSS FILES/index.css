@@ -1,123 +1,101 @@
-html 
-{
-  scroll-behavior: smooth; /* Remember, it's to assist with the Shop now button scroll-down behaviour*/
+html {
+  scroll-behavior: smooth; /* assists Shop Now scroll-down behaviour */
 }
 
-.hero-section
-{
-    height: 100vh;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-
-}
-
-.content-hero
-{
-    background-color: rgba(255, 255, 255, 0.368);
-    margin: 80px 100px;
-    text-align: center;
-
-}
-
-.content-hero h1
-{
-    margin: 70px 0;
-    font-size: 60px;
-}
-
-.content-hero p
-{
-    margin: 70px 60px;
-    font-size: 15px;
-}
-
-
-.read-more
-{
-   background-color:  rgba(255, 255, 255, 0.368) ;
-   border-color:  rgba(255, 255, 255, 0.368);
-   
-}
-
-.shop-now
-{
-    background-color: #363636;
-    font-family: 'Itim', cursive;
-    color: white;
-    margin: 80px 0 0 0;
-    padding: 15px;
-}
-
-/*SECTION TITLE*/
-.section-title
-{
+/*  HERO SECTION */
+.hero-section {
+  height: 100vh;
+  background-color: blue;
   display: flex;
-  /*justify-content: space-between;*/
-  flex-direction: row; 
-  margin: 20px 0 0 95px;
-  /*float: right;*/
+  justify-content: center;
 }
 
-.section-title h2
-{
-   font-size: 60px;
-}
-
-.section-title button
-{
-    margin: 60px 0 0 1050px;
-    border: 2px solid #2C2C2C;
-    width: 100px;
-    height: 50px;
-    border-radius: 25px;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-
-/*BESTSELLERS SECTION*/
-
-.Bestsellers
-{
-    overflow: hidden;
-    padding: 100px 0;
-    position: relative;
-}
-
-.horizontal-scroll-wrapper 
-{
-    width: 100%;
-    overflow: hidden;
-    height: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.product-track
-{
-  display: flex;
-  gap: 40px;
-  position: relative;
-}
-
-.product-card
-{
-  background-color: #f8f8f8;
-  width: 350px;
-  height: 450px;
-  border-radius: 20px;
+.content-hero {
+  background-color: rgba(255, 255, 255, 0.368);
+  margin: 80px 100px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-hero h1 {
+  margin: 70px 0;
+  font-size: 60px;
+}
+
+.content-hero p {
+  margin: 70px 60px;
+  font-size: 15px;
+}
+
+.read-more {
+  background-color: rgba(255, 255, 255, 0.368);
+  border-color: rgba(255, 255, 255, 0.368);
+}
+
+.shop-now {
+  background-color: #363636;
+  font-family: "Itim", cursive;
+  color: white;
+  margin: 80px 0 0 0;
+  padding: 15px;
+}
+
+/* SECTION TITLE  */
+.section-title {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 0 95px;
+}
+
+.section-title h2 {
+  font-size: 60px;
+}
+
+.section-title button {
+  margin: 60px 0 0 1050px;
+  border: 2px solid #2c2c2c;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* BESTSELLERS SECTION  */
+.Bestsellers {
   overflow: hidden;
   position: relative;
-  flex-shrink: 0;
+  padding: 60px 0;
 }
 
-.product-card img 
-{
+.horizontal-scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  will-change: transform;
+}
+
+.product-card {
+  flex: 0 0 250px;
+  width: 350px;
+  height: 450px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.product-card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -131,32 +109,27 @@ html
   top: 10px;
   right: 10px;
   font-size: 22px;
-  color: #B8B8B5;
+  color: #b8b8b5;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.product-card:hover 
-{
+.product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
-
 
 .wishlist-btn:hover {
   color: #363633;
 }
 
-
-/*DEPARTMENTS SECTION*/
-.deparment-backg
-{  
-  background-color: #EFEFEB;
+/* DEPARTMENTS SECTION */
+.deparment-backg {
+  background-color: #efefeb;
   padding: 80px 0;
 }
 
-.departments-grid 
-{
+.departments-grid {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -165,29 +138,25 @@ html
   margin: 0 130px;
 }
 
-.department-card 
-{
+.department-card {
   flex: 1;
-  background-color: #f8f8f8; /*add an image here*/
+  background-color: #f8f8f8;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-
   position: relative;
   overflow: hidden;
   transition: all 0.6s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.department-card:hover 
-{
-  flex: 2.5; 
+.department-card:hover {
+  flex: 2.5;
 }
 
-/* IMAGE SETTINGS */
 .department-card img {
   position: absolute;
   top: 0;
@@ -200,13 +169,13 @@ html
   z-index: 0;
 }
 
-/* TEXT (vertical by default) */
+/* TEXT (vertical) */
 .department-card h3 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-family: 'Thasadith', sans-serif;
-  color: #2C2C2C;
-  font-size: 25x;
+  font-family: "Thasadith", sans-serif;
+  color: #2c2c2c;
+  font-size: 25px;
   letter-spacing: 3px;
   z-index: 2;
   transition: all 0.6s ease;
@@ -221,7 +190,7 @@ html
   color: white;
   border: none;
   padding: 15px;
-  font-family: 'Itim', cursive;
+  font-family: "Itim", cursive;
   font-size: 15px;
   letter-spacing: 1px;
   opacity: 0;
@@ -239,7 +208,7 @@ html
   transform: rotate(0);
   color: white;
   font-size: 24px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .department-card:hover button {
@@ -248,53 +217,48 @@ html
 
 /* Smooth shadow lift */
 .department-card:hover {
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-
-/*SKIN CONCERNS SECTION*/
+/* SKIN CONCERNS SECTION */
 .SkinConcerns {
-  padding: 100px 60px;
+  overflow: hidden;
+  position: relative;
   background-color: #f8f8f8;
-  overflow: hidden; /* hides scroll overflow for later GSAP animation */
+  padding: 80px 0px;
 }
 
-
-/* === ROW LAYOUT === */
 .concerns-track {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 60px;
 }
 
 .concerns-row {
   display: flex;
-  justify-content: center;
   gap: 40px;
+  width: max-content;
+  will-change: transform;
 }
 
-/* === CARDS === */
-.concern-card
-{
+.concern-card {
   position: relative;
-  flex: 0 0 750px; /* fixed width for train-like scrolling later */
-  background-color: #EFEFEB;
+  flex: 0 0 750px;
+  background-color: #efefeb;
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
   text-align: left;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   overflow: hidden;
 }
 
-.concern-card:hover 
-{
+.concern-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-.concern-card img
-{
+.concern-card img {
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -302,8 +266,7 @@ html
   display: block;
 }
 
-.concern-header 
-{
+.concern-header {
   position: absolute;
   top: 10%;
   left: 0;
@@ -317,39 +280,35 @@ html
   opacity: 0;
 }
 
-.concern-card:hover  .concern-header
-{
+.concern-card:hover .concern-header {
   opacity: 1;
 }
 
-.concern-card h3 
-{
+.concern-card h3 {
   font-size: 8rem;
   margin-bottom: 15px;
   color: #2c2c2c;
 }
 
-.concern-card p 
-{
+.concern-card p {
   color: #555;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.concern-card button 
-{
+.concern-card button {
   background-color: transparent;
   color: black;
   border: solid 2px black;
   border-radius: 25px;
   padding: 10px 20px;
-  font-family: 'Thasadith', sans-serif;
+  font-family: "Thasadith", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .concern-card button:hover {
   background-color: #555;
+  color: white;
 }
-
