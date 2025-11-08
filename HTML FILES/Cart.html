@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LUMÉA: CART PAGE</title>
+    <title>LUMÉA: CART</title>
 
-    <!-- CSS SCRIPTS -->
-    <link rel="stylesheet" href=" ../CSS FILES/Normalise.css" />
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="../CSS FILES/Normalise.css" />
     <link rel="stylesheet" href="../CSS FILES/main.css" />
+    <link rel="stylesheet" href="../CSS FILES/cart.css" />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/8d46d00593.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -16,7 +23,6 @@
     <div id="menu-overlay">
       <div class="menu-content">
         <button id="close-menu">&times;</button>
-
         <ul class="menu-links">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./Cart.html">Cart</a></li>
@@ -30,13 +36,48 @@
       </div>
     </div>
 
-    <main><h1>CART PAGE</h1></main>
+    <main class="cart-page">
+      <h1>Your Bag</h1>
+
+      <div class="cart-container">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Products</th>
+              <th>Description</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- I will use Cart.js to populate items ready to purchase items here -->
+          </tbody>
+        </table>
+
+        <aside class="cart-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-line">
+            <span id="product-count">0 Products</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          <div class="summary-line">
+            <span>Shipping</span>
+            <span id="shipping">$5.00</span>
+          </div>
+          <hr />
+          <div class="summary-total">
+            <span>Total</span>
+            <span id="total">$0.00</span>
+          </div>
+          <button class="checkout-btn">CHECKOUT</button>
+        </aside>
+      </div>
+    </main>
 
     <footer class="footer"></footer>
-  </body>
-  <!-- GSAP SCRIPT -->
-  <script src=""></script>
 
-  <!-- JS SCRIPT -->
-  <script src="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/JS FILES/main.js"></script>
+    <script src="../JS FILES/main.js"></script>
+    <script src="../JS FILES/cart.js"></script>
+  </body>
 </html>

@@ -8,6 +8,13 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="../CSS FILES/Normalise.css" />
     <link rel="stylesheet" href="../CSS FILES/main.css" />
+    <link rel="stylesheet" href="../CSS FILES/bestsellers.css" />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/8d46d00593.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav id="nav-bar"></nav>
@@ -30,15 +37,73 @@
     </div>
 
     <main>
-      <h1>BESTSELLERS PAGE</h1>
+      <h1>Bestsellers</h1>
+      <section class="product-grid" id="bestseller-grid">
+        <div
+          class="product-card"
+          data-name="Gentle Cleanser"
+          data-price="15.00"
+        >
+          <img
+            src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+            alt="Gentle Cleanser"
+          />
+          <h3>Gentle Cleanser</h3>
+          <p>R150.00</p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <div
+          class="product-card"
+          data-name="Hydrating Serum"
+          data-price="25.00"
+        >
+          <img
+            src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+            alt="Hydrating Serum"
+          />
+          <h3>Hydrating Serum</h3>
+          <p>R250.00</p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <div class="product-card" data-name="Sunscreen" data-price="20.00">
+          <img
+            src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+            alt="Sunscreen"
+          />
+          <h3>Sunscreen</h3>
+          <p>R200.00</p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <div class="product-card" data-name="Body Lotion" data-price="18.00">
+          <img
+            src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+            alt="Body Lotion"
+          />
+          <h3>Body Lotion</h3>
+          <p>R180.00</p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <div class="product-card" data-name="Body Scrub" data-price="22.00">
+          <img
+            src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+            alt="Body Scrub"
+          />
+          <h3>Body Scrub</h3>
+          <p>R220.00</p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p>&copy; 2025 LUMÉA — All Rights Reserved</p>
+    </footer>
+
+    <script src="../JS FILES/main.js"></script>
+    <script src="../JS FILES/bestsellers.js"></script>
   </body>
-
-  <!-- GSAP SCRIPT -->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script> -->
-
-  <!-- JS SCRIPT -->
-  <script src="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/JS FILES/main.js"></script>
 </html>

@@ -1,0 +1,159 @@
+.nav-bar
+{
+  font-family: 'Thasadith', sans-serif;
+}
+
+main 
+{
+  padding: 100px 120px;
+  background-color: #F8F8F8;
+  color: #2C2C2C;
+  font-family: 'Thasadith', sans-serif;
+}
+
+main h1 
+{
+  font-size: 3.5rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.department-row 
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+
+.department-info {
+  flex: 1;
+  max-width: 300px;
+}
+
+.department-info h2 {
+  font-family: 'Itim', cursive;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.department-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.view-all {
+  background: none;
+  border: none;
+  font-family: 'Itim', cursive;
+  color: #2C2C2C;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.product-carousel {
+  flex: 3;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.5s ease;
+}
+
+.product-card {
+  min-width: 240px;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.add-to-cart {
+  background-color: #363633;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-family: 'Itim', cursive;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #2C2C2C;
+  color: white;
+}
+
+.arrow.left {
+  left: -20px;
+}
+
+.arrow.right {
+  right: -20px;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #2C2C2C;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-family: 'Itim', cursive;
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}

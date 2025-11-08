@@ -1,0 +1,104 @@
+main 
+{
+  padding: 100px 120px;
+  background-color: #F8F8F8;
+  color: black;
+  font-family: 'Thasadith', sans-serif;
+}
+
+main h1 
+{
+  font-size: 3.5rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* PRODUCT GRID */
+.product-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  justify-items: center;
+}
+
+.product-card 
+{
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.product-card:hover 
+{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+}
+
+.product-card img 
+{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-card h3 
+{
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.product-card p 
+{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #363633;
+  margin-bottom: 15px;
+}
+
+.add-to-cart 
+{
+  background-color: #363633;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-family: 'Itim', cursive;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart:hover 
+{
+  background-color: #555;
+}
+
+.toast 
+{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #2C2C2C;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-family: 'Thasadith', sans-serif;
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.toast.show 
+{
+  opacity: 1;
+  transform: translateY(0);
+}

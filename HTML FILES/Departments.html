@@ -8,14 +8,21 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="../CSS FILES/Normalise.css" />
     <link rel="stylesheet" href="../CSS FILES/main.css" />
+    <link rel="stylesheet" href="../CSS FILES/departments.css" />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/8d46d00593.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <nav id="nav-bar"></nav>
 
     <div id="menu-overlay">
       <div class="menu-content">
         <button id="close-menu">&times;</button>
-
         <ul class="menu-links">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./Cart.html">Cart</a></li>
@@ -30,30 +37,220 @@
     </div>
 
     <main class="Departments-page">
-      <h1>DEPARMENTS PAGE</h1>
+      <h1>Departments</h1>
 
-      <section id="dep-cleansers">
-        <h2>Cleansers</h2>
+      <!-- CLEANSERS -->
+      <section class="department-row" id="dep-cleansers">
+        <div class="department-info">
+          <h2>Cleansers</h2>
+          <p>
+            Gentle, skin-balancing cleansers to purify and refresh your
+            complexion.
+          </p>
+          <button class="view-all">See all Cleansers →</button>
+        </div>
+
+        <div class="product-carousel">
+          <button class="arrow left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-track">
+            <div
+              class="product-card"
+              data-name="Foaming Cleanser"
+              data-price="15.00"
+            >
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Foaming Cleanser"
+              />
+              <h3>Foaming Cleanser</h3>
+              <p>$15.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div
+              class="product-card"
+              data-name="Cream Cleanser"
+              data-price="18.00"
+            >
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Cream Cleanser"
+              />
+              <h3>Cream Cleanser</h3>
+              <p>$18.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div
+              class="product-card"
+              data-name="Gel Cleanser"
+              data-price="20.00"
+            >
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Gel Cleanser"
+              />
+              <h3>Gel Cleanser</h3>
+              <p>$20.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <button class="arrow right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
       </section>
 
-      <section id="dep-exfoliants">
-        <h2>Exfoliants</h2>
+      <!-- EXFOLIANTS -->
+      <section class="department-row" id="dep-exfoliants">
+        <div class="department-info">
+          <h2>Exfoliants</h2>
+          <p>
+            Polish away dullness with exfoliants that reveal radiant, smooth
+            skin.
+          </p>
+          <button class="view-all">See all Exfoliants →</button>
+        </div>
+
+        <div class="product-carousel">
+          <button class="arrow left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-track">
+            <div
+              class="product-card"
+              data-name="Enzyme Scrub"
+              data-price="22.00"
+            >
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Enzyme Scrub"
+              />
+              <h3>Enzyme Scrub</h3>
+              <p>$22.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div
+              class="product-card"
+              data-name="Polishing Exfoliant"
+              data-price="25.00"
+            >
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Polishing Exfoliant"
+              />
+              <h3>Polishing Exfoliant</h3>
+              <p>$25.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <button class="arrow right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
       </section>
 
-      <section id="dep-hydration">
-        <h2>Hydration</h2>
+      <!-- HYDRATION -->
+      <section class="department-row" id="dep-hydration">
+        <div class="department-info">
+          <h2>Hydration</h2>
+          <p>
+            Replenishing serums and creams that deeply hydrate and lock in
+            softness.
+          </p>
+          <button class="view-all">See all Hydration →</button>
+        </div>
+
+        <div class="product-carousel">
+          <button class="arrow left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-track">
+            <div
+              class="product-card"
+              data-name="Hydrating Serum"
+              data-price="25.00"
+            >
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Hydrating Serum"
+              />
+              <h3>Hydrating Serum</h3>
+              <p>$25.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div
+              class="product-card"
+              data-name="Moisture Cream"
+              data-price="28.00"
+            >
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Moisture Cream"
+              />
+              <h3>Moisture Cream</h3>
+              <p>$28.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <button class="arrow right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
       </section>
 
-      <section id="dep-bodyaccess.">
-        <h2>Body Accessories</h2>
+      <!-- BODY ACCESSORIES -->
+      <section class="department-row" id="dep-bodyaccess">
+        <div class="department-info">
+          <h2>Body Accessories</h2>
+          <p>
+            Complement your routine with tools that elevate your body-care
+            rituals.
+          </p>
+          <button class="view-all">See all Accessories →</button>
+        </div>
+
+        <div class="product-carousel">
+          <button class="arrow left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-track">
+            <div class="product-card" data-name="Body Brush" data-price="18.00">
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Body Brush"
+              />
+              <h3>Body Brush</h3>
+              <p>$18.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div
+              class="product-card"
+              data-name="Bath Sponge"
+              data-price="12.00"
+            >
+              <img
+                src="../MEDIA FILES/Images/Product_Place_Holder_Img.jpg"
+                alt="Bath Sponge"
+              />
+              <h3>Bath Sponge</h3>
+              <p>$12.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <button class="arrow right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
       </section>
     </main>
+
     <footer class="footer"></footer>
+    <div id="toast" class="toast">Item added to cart!</div>
+
+    <script src="../JS FILES/main.js"></script>
+    <script src="../JS FILES/departments.js"></script>
   </body>
-
-  <!-- GSAP SCRIPT -->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script> -->
-
-  <!-- JS SCRIPT -->
-  <script src="/DIGA3009A_2740821_ReneilweThobejane_ExamWebsite/JS FILES/main.js"></script>
 </html>
